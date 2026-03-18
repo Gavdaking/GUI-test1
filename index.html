@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cine Search Pro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div id="app" data-loading="false">
+
+  <h1>Cine Search Pro</h1>
+
+  <!-- Search Input -->
+  <input id="searchInput" placeholder="Search movies..." autocomplete="off">
+
+  <!-- Loading Spinner -->
+  <div class="spinner">Loading...</div>
+
+  <!-- Search Results -->
+  <ul id="results"></ul>
+
+  <!-- Movie Details -->
+  <div id="details">
+    <h2 id="movieTitle">Select a movie</h2>
+    <p id="movieOverview"></p>
+
+    <h3>Cast</h3>
+    <ul id="castList"></ul>
+
+    <h3>Trailer</h3>
+    <div id="videoContainer"></div>
+  </div>
+
+</div>
+
+<!-- Template for results (used with DocumentFragment) -->
+<template id="movie-template">
+  <li class="result-item">
+    <span class="title"></span>
+  </li>
+</template>
+
+<script src="app.js"></script>
+
+</body>
+</html>

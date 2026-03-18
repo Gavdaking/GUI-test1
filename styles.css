@@ -1,0 +1,96 @@
+/* Reset / Base */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  background: #f7f7f7;
+  color: #333;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+}
+
+/* Search Input */
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Results List */
+#results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Each Result */
+.result-item {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+/* Hover Effect */
+.result-item:hover {
+  background: #f0f0f0;
+}
+
+/* Active (keyboard navigation) */
+.active {
+  background: #dcdcdc;
+}
+
+/* Highlight search text */
+.highlight {
+  background: yellow;
+  font-weight: bold;
+}
+
+/* Loading Spinner */
+.spinner {
+  display: none;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Show spinner when loading */
+[data-loading="true"] .spinner {
+  display: block;
+}
+
+/* Details Section */
+#details {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Cast List */
+#castList {
+  list-style: none;
+  padding: 0;
+}
+
+#castList li {
+  padding: 5px 0;
+}
+
+/* Video link */
+#videoContainer a {
+  display: inline-block;
+  margin-top: 10px;
+  color: blue;
+  text-decoration: underline;
+}
